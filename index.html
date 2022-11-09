@@ -1,1 +1,63 @@
-hi
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="accordion-body">
+  <div class="accordion">
+    <h1>Frequently Asked Question</h1>
+    <hr />
+    <div class="container">
+      <div class="label">What is HTML</div>
+      <div class="content">
+        HTML stands for Hyper Text Markup Language. HTML is the standard markup
+        language for creating Web pages. HTML describes the structure of a Web
+        page. HTML consists of a series of elements. HTML elements tell the
+        browser how to display the content.
+      </div>
+    </div>
+    <div class="container">
+      <div class="label">What is CSS</div>
+      <div class="content">
+        Cascading Style Sheets (CSS) is a stylesheet language used to describe
+        the presentation of a document written in HTML or XML (including XML
+        dialects such as SVG, MathML or XHTML).
+      </div>
+    </div>
+    <div class="container">
+      <div class="label">What is JAVASCRIPT</div>
+      <div class="content">
+        Javascript is used by programmers across the world to create dynamic and
+        interactive web content like applications and browsers. JavaScript is so
+        popular that it's the most used programming language in the world, used
+        as a client-side programming language by 97.0% of all websites.
+      </div>
+    </div>
+    <div class="container">
+      <div class="label">What is REACT</div>
+      <div class="content">
+        React is a JavaScript library developed by Facebook which, among other
+        things, was used to build Instagram.com. Its aim is to allow developers
+        to easily create fast user interfaces for websites and applications
+        alike. The main concept of React. js is virtual DOM.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <script src="index.js"></script>
+ -->
+
+ <script>
+    const accordion = document.getElementsByClassName('container');
+  
+  for (i=0; i<accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+      this.classList.toggle('active')
+    })
+  }
+  
+  </script>
+    </body>
+</html>
